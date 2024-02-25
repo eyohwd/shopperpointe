@@ -4,7 +4,7 @@ import axios from "axios";
 
 const BASE_URL = process.env.REACT_APP_BASEURL
   
-const Token = JSON.parse(localStorage.getItem("user")).accessToken
+const Token = JSON.parse(localStorage.getItem("user"))?.accessToken
 
 
 export const publicRequest = axios.create({
